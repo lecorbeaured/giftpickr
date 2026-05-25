@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gift Guides — Curated Picks for Every Occasion & Budget</title>
+  <meta name="description" content="Curated gift guides for every occasion, recipient, and budget. Dad, mom, grandparents, him, her, Secret Santa, Christmas, Father's Day, Mother's Day, and more." />
+  <meta name="keywords" content="gift guides, gift ideas, best gifts, christmas gifts, secret santa gifts, fathers day gifts, mothers day gifts, gifts under 50" />
+  <meta property="og:title" content="Gift Guides — Curated Picks for Every Occasion" />
+  <meta property="og:description" content="Curated gift guides for every occasion, recipient, and budget." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://giftpickr.live/" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Gift Guides",
+    "description": "Curated gift guides for every occasion, recipient, and budget.",
+    "url": "https://giftpickr.live",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://giftpickr.live/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0d0d0d;
+      --panel: #141414;
+      --card: #1a1a1a;
+      --border: #2a2a2a;
+      --gold: #c8963a;
+      --gold-light: #d4aa50;
+      --cream: #e8e0d0;
+      --muted: #707070;
+      --white: #f0f0f0;
+      --red: #c0392b;
+      --green: #1a5c2a;
+      --blue: #1a3a5c;
+      --purple: #3a1a5c;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--cream);
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ─── NAV ─── */
+    nav {
+      background: var(--panel);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--gold);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.18s;
+    }
+
+    .nav-links a:hover { color: var(--gold); }
+
+    /* ─── HERO ─── */
+    .hero {
+      background: var(--panel);
+      border-bottom: 1px solid var(--border);
+      padding: 88px 24px 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 50% 0%, rgba(200,150,58,0.08) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .hero-inner { max-width: 720px; margin: 0 auto; position: relative; z-index: 1; }
+
+    .hero-eyebrow {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(40px, 6vw, 72px);
+      font-weight: 700;
+      line-height: 1.1;
+      color: var(--white);
+    }
+
+    .hero h1 em { font-style: italic; color: var(--gold); }
+
+    .hero-desc {
+      margin-top: 20px;
+      font-size: 17px;
+      color: var(--muted);
+      max-width: 520px;
+      margin-inline: auto;
+    }
+
+    .hero-stats {
+      margin-top: 32px;
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      text-align: center;
+      border-left: 2px solid var(--gold);
+      padding-left: 14px;
+    }
+
+    .stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    /* ─── CLUSTERS ─── */
+    main { max-width: 1100px; margin: 64px auto 0; padding: 0 24px 80px; }
+
+    .cluster { margin-bottom: 56px; }
+
+    .cluster-header {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .cluster-icon { font-size: 22px; }
+
+    .cluster-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--white);
+    }
+
+    .cluster-count {
+      font-size: 12px;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+      margin-left: auto;
+    }
+
+    .guide-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 8px;
+    }
+
+    .guide-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 18px 18px 16px;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      transition: border-color 0.2s, background 0.2s, transform 0.2s;
+      position: relative;
+    }
+
+    .guide-card:hover {
+      border-color: var(--gold);
+      background: #202020;
+      transform: translateY(-2px);
+    }
+
+    .guide-card::after {
+      content: '→';
+      position: absolute;
+      right: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 14px;
+      color: var(--border);
+      transition: color 0.2s, right 0.2s;
+    }
+
+    .guide-card:hover::after {
+      color: var(--gold);
+      right: 10px;
+    }
+
+    .guide-badge {
+      display: inline-block;
+      font-size: 9px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 2px 7px;
+      border-radius: 2px;
+      width: fit-content;
+      margin-bottom: 2px;
+    }
+
+    .badge-holiday { background: rgba(192,57,43,0.15); color: #e74c3c; }
+    .badge-budget  { background: rgba(26,92,42,0.15);  color: #27ae60; }
+    .badge-urgent  { background: rgba(200,150,58,0.15); color: var(--gold); }
+    .badge-general { background: rgba(58,88,200,0.15);  color: #6090e0; }
+    .badge-fun     { background: rgba(150,58,200,0.15); color: #b060e0; }
+
+    .guide-title {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--white);
+      line-height: 1.3;
+      padding-right: 20px;
+    }
+
+    .guide-desc {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.5;
+      padding-right: 20px;
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--panel);
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    footer a { color: var(--muted); text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 36px; }
+      .guide-grid { grid-template-columns: 1fr; }
+      .hero-stats { gap: 20px; }
+    }
+  </style>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">🎁 Gift Guides</a>
+  <div class="nav-links">
+    <a href="#christmas">Christmas</a>
+    <a href="#secret-santa">Secret Santa</a>
+    <a href="#fathers-day">Father's Day</a>
+    <a href="#mothers-day">Mother's Day</a>
+    <a href="#budget">Under $50</a>
+    <a href="#last-minute">Last Minute</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <p class="hero-eyebrow">Curated Gift Guides</p>
+    <h1>The Right Gift<br>for <em>Every</em> Occasion</h1>
+    <p class="hero-desc">Handpicked guides for every recipient, every holiday, and every budget. No filler — just gifts that actually land.</p>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-num">29</div><div class="stat-label">Gift Guides</div></div>
+      <div class="stat"><div class="stat-num">200+</div><div class="stat-label">Curated Picks</div></div>
+      <div class="stat"><div class="stat-num">5</div><div class="stat-label">Holiday Clusters</div></div>
+    </div>
+  </div>
+</div>
+
+<main>
+
+  <!-- CHRISTMAS -->
+  <section class="cluster" id="christmas">
+    <div class="cluster-header">
+      <span class="cluster-icon">🎄</span>
+      <span class="cluster-title">Christmas Gifts</span>
+      <span class="cluster-count">8 guides</span>
+    </div>
+    <div class="guide-grid">
+      <a href="/christmas-gifts-for-dad" class="guide-card">
+        <span class="guide-badge badge-holiday">Christmas</span>
+        <span class="guide-title">Christmas Gifts for Dad</span>
+        <span class="guide-desc">Practical picks he'll actually want.</span>
+      </a>
+      <a href="/christmas-gifts-for-mom" class="guide-card">
+        <span class="guide-badge badge-holiday">Christmas</span>
+        <span class="guide-title">Christmas Gifts for Mom</span>
+        <span class="guide-desc">Gifts that come from the heart.</span>
+      </a>
+      <a href="/christmas-gifts-for-grandpa" class="guide-card">
+        <span class="guide-badge badge-holiday">Christmas</span>
+        <span class="guide-title">Christmas Gifts for Grandpa</span>
+        <span class="guide-desc">Picks he'll genuinely appreciate.</span>
+      </a>
+      <a href="/christmas-gifts-for-grandma" class="guide-card">
+        <span class="guide-badge badge-holiday">Christmas</span>
+        <span class="guide-title">Christmas Gifts for Grandma</span>
+        <span class="guide-desc">Gifts as warm as she is.</span>
+      </a>
+      <a href="/christmas-gifts-for-him" class="guide-card">
+        <span class="guide-badge badge-holiday">Christmas</span>
+        <span class="guide-title">Christmas Gifts for Him</span>
+        <span class="guide-desc">Gifts he'll actually use.</span>
+      </a>
+      <a href="/christmas-gifts-for-her" class="guide-card">
+        <span class="guide-badge badge-holiday">Christmas</span>
+        <span class="guide-title">Christmas Gifts for Her</span>
+        <span class="guide-desc">Gifts she'll adore.</span>
+      </a>
+      <a href="/christmas-gifts-under-50" class="guide-card">
+        <span class="guide-badge badge-budget">Under $50</span>
+        <span class="guide-title">Christmas Gifts Under $50</span>
+        <span class="guide-desc">Everyone covered, budget intact.</span>
+      </a>
+      <a href="/last-minute-christmas-gifts" class="guide-card">
+        <span class="guide-badge badge-urgent">Last Minute</span>
+        <span class="guide-title">Last Minute Christmas Gifts</span>
+        <span class="guide-desc">Still time. Sorted by speed.</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- SECRET SANTA -->
+  <section class="cluster" id="secret-santa">
+    <div class="cluster-header">
+      <span class="cluster-icon">🎁</span>
+      <span class="cluster-title">Secret Santa & Gift Exchanges</span>
+      <span class="cluster-count">7 guides</span>
+    </div>
+    <div class="guide-grid">
+      <a href="/secret-santa-gifts" class="guide-card">
+        <span class="guide-badge badge-general">Secret Santa</span>
+        <span class="guide-title">Best Secret Santa Gifts</span>
+        <span class="guide-desc">MVP of the exchange picks.</span>
+      </a>
+      <a href="/secret-santa-gifts-under-25" class="guide-card">
+        <span class="guide-badge badge-budget">Under $25</span>
+        <span class="guide-title">Secret Santa Under $25</span>
+        <span class="guide-desc">Great picks, tight budget.</span>
+      </a>
+      <a href="/secret-santa-gifts-under-30" class="guide-card">
+        <span class="guide-badge badge-budget">Under $30</span>
+        <span class="guide-title">Secret Santa Under $30</span>
+        <span class="guide-desc">The sweet spot budget.</span>
+      </a>
+      <a href="/white-elephant-gifts" class="guide-card">
+        <span class="guide-badge badge-fun">White Elephant</span>
+        <span class="guide-title">White Elephant Gifts</span>
+        <span class="guide-desc">Funny, clever, worth stealing.</span>
+      </a>
+      <a href="/white-elephant-gifts-under-25" class="guide-card">
+        <span class="guide-badge badge-fun">Under $25</span>
+        <span class="guide-title">White Elephant Under $25</span>
+        <span class="guide-desc">Cheap, funny, worth fighting over.</span>
+      </a>
+      <a href="/office-secret-santa-gifts" class="guide-card">
+        <span class="guide-badge badge-general">Office</span>
+        <span class="guide-title">Office Secret Santa Gifts</span>
+        <span class="guide-desc">Safe, crowd-pleasing, actually good.</span>
+      </a>
+      <a href="/last-minute-secret-santa-gifts" class="guide-card">
+        <span class="guide-badge badge-urgent">Last Minute</span>
+        <span class="guide-title">Last Minute Secret Santa</span>
+        <span class="guide-desc">The exchange is today. You've got this.</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- FATHER'S DAY -->
+  <section class="cluster" id="fathers-day">
+    <div class="cluster-header">
+      <span class="cluster-icon">👔</span>
+      <span class="cluster-title">Father's Day Gifts</span>
+      <span class="cluster-count">5 guides</span>
+    </div>
+    <div class="guide-grid">
+      <a href="/best-gifts-for-dads" class="guide-card">
+        <span class="guide-badge badge-general">For Dad</span>
+        <span class="guide-title">Best Gifts for Dad</span>
+        <span class="guide-desc">Picks he won't return.</span>
+      </a>
+      <a href="/best-fathers-day-gifts" class="guide-card">
+        <span class="guide-badge badge-holiday">Father's Day</span>
+        <span class="guide-title">Best Father's Day Gifts</span>
+        <span class="guide-desc">Gifts he won't return.</span>
+      </a>
+      <a href="/best-gifts-for-dad-under-50" class="guide-card">
+        <span class="guide-badge badge-budget">Under $50</span>
+        <span class="guide-title">Dad Gifts Under $50</span>
+        <span class="guide-desc">Smart picks, real value.</span>
+      </a>
+      <a href="/best-fathers-day-gifts-under-50" class="guide-card">
+        <span class="guide-badge badge-budget">Under $50</span>
+        <span class="guide-title">Father's Day Under $50</span>
+        <span class="guide-desc">Mission: Gift Dad. Budget: $50.</span>
+      </a>
+      <a href="/last-minute-fathers-day-gifts" class="guide-card">
+        <span class="guide-badge badge-urgent">Last Minute</span>
+        <span class="guide-title">Last Minute Father's Day</span>
+        <span class="guide-desc">Breaking: you still have time.</span>
+      </a>
+      <a href="/last-minute-fathers-day-gifts-under-50" class="guide-card">
+        <span class="guide-badge badge-urgent">Last Minute</span>
+        <span class="guide-title">Last Minute Father's Day Under $50</span>
+        <span class="guide-desc">Fast, under budget, mission complete.</span>
+      </a>
+      <a href="/last-minute-gifts-for-dad" class="guide-card">
+        <span class="guide-badge badge-urgent">Last Minute</span>
+        <span class="guide-title">Last Minute Gifts for Dad</span>
+        <span class="guide-desc">Gifts for dad, right now.</span>
+      </a>
+      <a href="/last-minute-gifts-for-dad-under-50" class="guide-card">
+        <span class="guide-badge badge-urgent">Last Minute</span>
+        <span class="guide-title">Last Minute Dad Gifts Under $50</span>
+        <span class="guide-desc">Fast, cheap, actually good.</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- MOTHER'S DAY -->
+  <section class="cluster" id="mothers-day">
+    <div class="cluster-header">
+      <span class="cluster-icon">🌸</span>
+      <span class="cluster-title">Mother's Day Gifts</span>
+      <span class="cluster-count">6 guides</span>
+    </div>
+    <div class="guide-grid">
+      <a href="/best-gifts-for-moms" class="guide-card">
+        <span class="guide-badge badge-general">For Mom</span>
+        <span class="guide-title">Best Gifts for Mom</span>
+        <span class="guide-desc">Thoughtful picks she'll love.</span>
+      </a>
+      <a href="/best-mothers-day-gifts" class="guide-card">
+        <span class="guide-badge badge-holiday">Mother's Day</span>
+        <span class="guide-title">Best Mother's Day Gifts</span>
+        <span class="guide-desc">Picks she'll remember.</span>
+      </a>
+      <a href="/best-gifts-for-mom-under-50" class="guide-card">
+        <span class="guide-badge badge-budget">Under $50</span>
+        <span class="guide-title">Mom Gifts Under $50</span>
+        <span class="guide-desc">Thoughtful picks, smart budget.</span>
+      </a>
+      <a href="/last-minute-mothers-day-gifts" class="guide-card">
+        <span class="guide-badge badge-urgent">Last Minute</span>
+        <span class="guide-title">Last Minute Mother's Day</span>
+        <span class="guide-desc">She'll love it. Promise.</span>
+      </a>
+      <a href="/last-minute-gifts-for-mom" class="guide-card">
+        <span class="guide-badge badge-urgent">Last Minute</span>
+        <span class="guide-title">Last Minute Gifts for Mom</span>
+        <span class="guide-desc">Gifts that arrive today.</span>
+      </a>
+      <a href="/last-minute-gifts-for-mom-under-50" class="guide-card">
+        <span class="guide-badge badge-urgent">Last Minute</span>
+        <span class="guide-title">Last Minute Mom Gifts Under $50</span>
+        <span class="guide-desc">Beautiful, fast, budget-friendly.</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>This site contains affiliate links. We may earn a small commission at no extra cost to you. &nbsp;|&nbsp; <a href="/privacy">Privacy Policy</a></p>
+</footer>
+
+</body>
+</html>

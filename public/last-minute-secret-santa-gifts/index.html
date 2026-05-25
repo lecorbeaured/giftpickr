@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Last Minute Secret Santa Gifts — The Exchange Is Today. You've Got This.</title>
+  <meta name="description" content="Last minute Secret Santa gifts that arrive fast or download instantly. Digital picks land in seconds. Prime same-day delivers real gifts before the exchange." />
+  <meta name="keywords" content="last minute secret santa gifts, last minute secret santa ideas, emergency secret santa gift, same day secret santa gifts, secret santa gifts that ship fast" />
+  <meta property="og:title" content="Last Minute Secret Santa Gifts" />
+  <meta property="og:description" content="The exchange is today. You've got this. Fast Secret Santa picks sorted by speed." />
+  <meta property="og:type" content="article" />
+  <link rel="canonical" href="https://giftpickr.live/last-minute-secret-santa-gifts" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Last Minute Secret Santa Gifts","description":"Fast-arriving and digital last minute Secret Santa gifts sorted by delivery speed.","author":{"@type":"Organization","name":"EBSS Web Studio"},"mainEntity":{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What are good last minute Secret Santa gifts?","acceptedAnswer":{"@type":"Answer","text":"Amazon gift cards, food delivery credits, and digital subscriptions arrive instantly. For physical gifts, Amazon Prime same-day delivers candles, food gifts, and games in most cities."}},{"@type":"Question","name":"What Secret Santa gifts can I get instantly?","acceptedAnswer":{"@type":"Answer","text":"Amazon gift cards, Spotify Premium, gaming credits, food delivery gift cards, and streaming subscriptions all arrive via email within seconds of purchase."}},{"@type":"Question","name":"Is it okay to give a gift card for Secret Santa?","acceptedAnswer":{"@type":"Answer","text":"Absolutely — especially Amazon gift cards, which feel generous and give the recipient complete freedom. A physical Amazon gift card in a holiday card looks intentional. A digital one sent to their email still works in a pinch."}}]}}</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --black: #0a0808;
+      --dark: #120a0a;
+      --card: #1a0e0e;
+      --border: #2e1a1a;
+      --red: #cc1a1a;
+      --red-bright: #e82828;
+      --red-dim: #2a0808;
+      --cream: #f0e8e0;
+      --muted: #886060;
+      --instant: #22c55e;
+      --sameday: #f59e0b;
+      --nextday: #60a5fa;
+    }
+
+    *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+    html { scroll-behavior:smooth; }
+
+    body {
+      background: var(--black);
+      color: var(--cream);
+      font-family: 'Barlow', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ─── ALERT TICKER ─── */
+    .alert-wrap {
+      background: var(--red);
+      overflow: hidden;
+      padding: 10px 0;
+      white-space: nowrap;
+    }
+
+    .alert-ticker {
+      display: inline-block;
+      animation: tickerScroll 20s linear infinite;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 14px;
+      letter-spacing: 0.14em;
+      color: #fff;
+    }
+
+    @keyframes tickerScroll { from{transform:translateX(100vw)} to{transform:translateX(-100%)} }
+
+    /* ─── HEADER ─── */
+    header {
+      background: var(--dark);
+      border-bottom: 2px solid var(--red);
+      padding: 72px 24px 64px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content:'';
+      position:absolute; inset:0;
+      background:radial-gradient(ellipse at 70% 0%, rgba(204,26,26,0.1) 0%, transparent 55%);
+      pointer-events:none;
+    }
+
+    .header-inner { max-width:900px; margin:0 auto; position:relative; z-index:1; }
+
+    .alert-chip {
+      display:inline-flex; align-items:center; gap:8px;
+      background:var(--red); color:#fff;
+      font-family:'Bebas Neue',sans-serif;
+      font-size:13px; letter-spacing:0.14em;
+      padding:5px 16px; margin-bottom:18px;
+      opacity:0; animation:urgentIn 0.4s 0.1s ease forwards;
+    }
+
+    .alert-chip .blink { animation:blink 1s infinite; }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+    h1 {
+      font-family:'Bebas Neue',sans-serif;
+      font-size:clamp(56px,9vw,110px);
+      line-height:0.92; letter-spacing:0.02em;
+      color:var(--cream);
+      opacity:0; animation:urgentIn 0.4s 0.2s ease forwards;
+    }
+
+    h1 .red { color:var(--red-bright); }
+
+    .header-desc {
+      margin-top:22px; max-width:520px;
+      font-size:16px; color:var(--muted);
+      opacity:0; animation:urgentIn 0.4s 0.32s ease forwards;
+    }
+
+    .legend {
+      margin-top:24px; display:flex; gap:14px; flex-wrap:wrap;
+      opacity:0; animation:urgentIn 0.4s 0.44s ease forwards;
+    }
+
+    .legend-item {
+      display:flex; align-items:center; gap:7px;
+      font-size:12px; color:var(--muted);
+      border:1px solid var(--border); padding:5px 12px;
+    }
+
+    .dot { width:7px; height:7px; border-radius:50%; flex-shrink:0; }
+
+    /* ─── GRID ─── */
+    .grid-section { max-width:1080px; margin:52px auto 0; padding:0 24px 80px; }
+
+    .grid-label {
+      font-family:'Bebas Neue',sans-serif;
+      font-size:14px; letter-spacing:0.16em;
+      color:var(--muted); margin-bottom:20px;
+      display:flex; align-items:center; gap:12px;
+    }
+    .grid-label::after { content:''; flex:1; height:1px; background:var(--border); }
+
+    .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(300px,1fr)); gap:2px; background:var(--border); border:1px solid var(--border); }
+
+    .card {
+      background:var(--card);
+      padding:26px 22px;
+      display:flex; flex-direction:column; gap:10px;
+      transition:background 0.2s;
+      opacity:0; animation:urgentIn 0.35s ease forwards;
+    }
+
+    .card:hover { background:#201010; }
+
+    .card:nth-child(1){animation-delay:.04s} .card:nth-child(2){animation-delay:.08s}
+    .card:nth-child(3){animation-delay:.12s} .card:nth-child(4){animation-delay:.16s}
+    .card:nth-child(5){animation-delay:.20s} .card:nth-child(6){animation-delay:.24s}
+    .card:nth-child(7){animation-delay:.28s} .card:nth-child(8){animation-delay:.32s}
+
+    .card-top { display:flex; justify-content:space-between; align-items:flex-start; gap:8px; flex-wrap:wrap; }
+    .card-icon { font-size:26px; }
+
+    .badge-col { display:flex; flex-direction:column; gap:4px; align-items:flex-end; }
+
+    .speed-badge {
+      font-family:'Bebas Neue',sans-serif;
+      font-size:12px; letter-spacing:0.1em;
+      padding:2px 10px; border:1px solid;
+    }
+
+    .speed-instant { color:var(--instant); border-color:rgba(34,197,94,0.35); background:rgba(34,197,94,0.06); }
+    .speed-sameday { color:var(--sameday); border-color:rgba(245,158,11,0.35); background:rgba(245,158,11,0.06); }
+    .speed-nextday { color:var(--nextday); border-color:rgba(96,165,250,0.35); background:rgba(96,165,250,0.06); }
+
+    .price-badge {
+      font-size:10px; font-weight:500; letter-spacing:0.1em;
+      padding:2px 8px; border:1px solid var(--border);
+      color:var(--muted);
+    }
+
+    .card h2 {
+      font-family:'Bebas Neue',sans-serif;
+      font-size:20px; letter-spacing:0.04em; line-height:1.2;
+      color:var(--cream);
+    }
+
+    .card p { font-size:14px; color:var(--muted); line-height:1.65; flex:1; }
+
+    .tag {
+      font-size:10px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase;
+      padding:2px 8px; border:1px solid var(--border);
+      color:var(--muted); width:fit-content;
+    }
+
+    .cta-btn {
+      display:inline-block; margin-top:4px; padding:10px 20px;
+      background:var(--red); color:#fff;
+      font-family:'Bebas Neue',sans-serif;
+      font-size:14px; letter-spacing:0.1em;
+      text-decoration:none; transition:background 0.18s; width:fit-content;
+    }
+    .cta-btn:hover { background:var(--red-bright); }
+
+    .faq-section { max-width:720px; margin:0 auto; padding:0 24px 80px; }
+    .faq-heading { font-family:'Bebas Neue',sans-serif; font-size:42px; letter-spacing:0.04em; color:var(--cream); margin-bottom:8px; }
+    .faq-sub { font-size:13px; color:var(--muted); margin-bottom:32px; }
+
+    details { border-top:1px solid var(--border); padding:20px 0; }
+    details:last-of-type { border-bottom:1px solid var(--border); }
+    summary { font-size:16px; cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center; gap:16px; color:var(--cream); }
+    summary::-webkit-details-marker { display:none; }
+    summary::after { content:'+'; font-size:20px; color:var(--red); font-family:'Bebas Neue',sans-serif; flex-shrink:0; }
+    details[open] summary::after { content:'−'; }
+    details p { margin-top:12px; font-size:14.5px; color:var(--muted); line-height:1.75; }
+
+    footer { border-top:1px solid var(--border); text-align:center; padding:26px 24px; font-size:12px; color:var(--muted); }
+    footer a { color:var(--muted); text-decoration:underline; }
+
+    @keyframes urgentIn { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
+    @media(max-width:600px){ h1{font-size:52px} .grid{grid-template-columns:1fr;background:none;border:none;gap:2px} .card{border:1px solid var(--border)} }
+  </style>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+</head>
+<body>
+
+<div class="alert-wrap">
+  <span class="alert-ticker">⚡ LAST MINUTE SECRET SANTA ALERT &nbsp;·&nbsp; DIGITAL GIFTS ARRIVE IN SECONDS &nbsp;·&nbsp; PRIME SAME-DAY IN MOST CITIES &nbsp;·&nbsp; THE EXCHANGE IS TODAY &nbsp;·&nbsp; YOU'VE GOT THIS &nbsp;·&nbsp; ⚡ LAST MINUTE SECRET SANTA &nbsp;·&nbsp;</span>
+</div>
+
+<header>
+  <div class="header-inner">
+    <div class="alert-chip"><span class="blink">●</span> LAST MINUTE</div>
+    <h1>Secret Santa.<br><span class="red">Right Now.</span></h1>
+    <p class="header-desc">Digital picks that arrive in seconds. Prime same-day covers everything else. Sorted fastest first — you'll be fine.</p>
+    <div class="legend">
+      <div class="legend-item"><div class="dot" style="background:var(--instant)"></div> Instant</div>
+      <div class="legend-item"><div class="dot" style="background:var(--sameday)"></div> Same-Day Prime</div>
+      <div class="legend-item"><div class="dot" style="background:var(--nextday)"></div> Next-Day Prime</div>
+    </div>
+  </div>
+</header>
+
+<section class="grid-section">
+  <div class="grid-label">PICKS SORTED BY SPEED</div>
+  <div class="grid" id="gift-grid"></div>
+</section>
+
+<section class="faq-section">
+  <h2 class="faq-heading">Panic Mode FAQ</h2>
+  <p class="faq-sub">Quick answers for no-time situations.</p>
+
+  <details>
+    <summary>What are good last minute Secret Santa gifts?</summary>
+    <p>Amazon gift cards, food delivery credits, and digital subscriptions arrive instantly. For physical gifts, Amazon Prime same-day delivers candles, food gift boxes, and popular card games in most US cities — check the estimate before ordering.</p>
+  </details>
+  <details>
+    <summary>What Secret Santa gifts can I get instantly?</summary>
+    <p>Amazon gift cards, Spotify Premium, gaming credits (Steam, Xbox, PlayStation), food delivery gift cards, and streaming subscriptions all arrive via email within seconds of purchase — available 24/7 with no delivery window.</p>
+  </details>
+  <details>
+    <summary>Is it okay to give a gift card for Secret Santa?</summary>
+    <p>Absolutely — especially Amazon gift cards, which feel generous and give complete freedom. A digital one sent to their email the morning of the exchange still works. Pair it with a handwritten note in a holiday card and it looks entirely intentional.</p>
+  </details>
+</section>
+
+<footer>
+  <p>This page contains affiliate links. We may earn a small commission at no extra cost to you. &nbsp;|&nbsp; <a href="/privacy">Privacy Policy</a></p>
+</footer>
+
+<script>
+  const ASSOCIATE_TAG = 'ericcoste-20';
+
+  const PRODUCTS = [
+    { icon:'🎁', title:'Amazon Gift Card (Email)', desc:'Lands in their inbox the moment you send it. They pick exactly what they want — honestly the most used and appreciated gift on this list. Zero judgment.', speed:'instant', speedLabel:'Instant', price:'Any amount', tag:'Digital', url:'#', asin:'' },
+    { icon:'🎵', title:'Spotify Premium Gift', desc:'A month or year of ad-free music and podcasts. Delivered instantly. The gift they actually use every single commute, workout, and work session.', speed:'instant', speedLabel:'Instant', price:'Under $20/mo', tag:'Digital', url:'#', asin:'' },
+    { icon:'🍕', title:'Food Delivery Gift Card', desc:'DoorDash, Uber Eats, or their preferred app. Arrives instantly. Lunch or dinner is sorted. They will use it today or tomorrow and think of you fondly.', speed:'instant', speedLabel:'Instant', price:'Under $30', tag:'Digital', url:'#', asin:'' },
+    { icon:'🕯️', title:'Luxury Candle Set', desc:'Hand-poured soy candles in elevated scents. Same-day Prime in most cities. Arrives beautiful, no wrapping needed, universally loved.', speed:'sameday', speedLabel:'Same-Day', price:'Under $35', tag:'Ambiance', url:'#', asin:'' },
+    { icon:'🎲', title:'Exploding Kittens Card Game', desc:'The most stolen game at any exchange. Same-day Prime in most cities. Under $25 and the pick most likely to make you look like you planned ahead.', speed:'sameday', speedLabel:'Same-Day', price:'Under $25', tag:'Games', url:'#', asin:'' },
+    { icon:'🍫', title:'Artisan Chocolate Box', desc:'Premium chocolates in a holiday tin. Same-day Prime. Under $30 — arrives gift-ready, requires zero wrapping, and is genuinely appreciated by everyone.', speed:'sameday', speedLabel:'Same-Day', price:'Under $30', tag:'Indulgence', url:'#', asin:'' },
+    { icon:'☕', title:'Coffee & Mug Gift Set', desc:'A nice mug with quality coffee or cocoa. Next-day Prime. Under $30. The desk gift that gets used every workday — looks thoughtful, costs a reasonable amount.', speed:'nextday', speedLabel:'Next-Day', price:'Under $30', tag:'Food & Drink', url:'#', asin:'' },
+    { icon:'🌿', title:'Gourmet Snack & Nut Box', desc:'Artisan nuts, dried fruit, and holiday snacks in a gift box. Next-day Prime. Under $28. Safe for every colleague, diet, and taste preference.', speed:'nextday', speedLabel:'Next-Day', price:'Under $28', tag:'Food', url:'#', asin:'' }
+  ];
+
+  const speedClass = { instant:'speed-instant', sameday:'speed-sameday', nextday:'speed-nextday' };
+
+  function buildUrl(p) { return p.asin ? `https://www.amazon.com/dp/${p.asin}?tag=${ASSOCIATE_TAG}` : p.url !== '#' ? p.url : '#'; }
+  function linkAttrs(p) { return buildUrl(p) !== '#' ? 'target="_blank" rel="noopener sponsored"' : ''; }
+
+  function renderGrid(list) {
+    document.getElementById('gift-grid').innerHTML = list.map((p,i) => `
+      <div class="card" style="animation-delay:${(i*0.04).toFixed(2)}s">
+        <div class="card-top">
+          <div class="card-icon">${p.icon}</div>
+          <div class="badge-col">
+            <span class="speed-badge ${speedClass[p.speed]}">⚡ ${p.speedLabel}</span>
+            <span class="price-badge">${p.price}</span>
+          </div>
+        </div>
+        <h2>${p.title}</h2><p>${p.desc}</p>
+        <span class="tag">${p.tag}</span>
+        <a href="${buildUrl(p)}" class="cta-btn" ${linkAttrs(p)}>Get It Now →</a>
+      </div>`).join('');
+  }
+
+  const y = new Date().getFullYear();
+  document.querySelectorAll('.dyn-year').forEach(el => el.textContent = y);
+  document.title = `Last Minute Secret Santa Gifts (${y}) — The Exchange Is Today. You've Got This.`;
+  const dm = document.querySelector('meta[name="description"]'); if (dm) dm.content = dm.content.replace(/\d{4}/g, y);
+  renderGrid(PRODUCTS);
+</script>
+</body>
+</html>

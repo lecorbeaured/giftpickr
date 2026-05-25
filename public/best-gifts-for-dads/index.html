@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best Gifts for Dads — Curated Picks He'll Actually Use</title>
+  <meta name="description" content="A handpicked list of the best gifts for dads — practical, thoughtful, and genuinely loved. No fluff, just great finds." />
+  <meta name="keywords" content="best gifts for dads, father's day gifts, gifts for him, dad birthday gifts" />
+  <meta property="og:title" content="Best Gifts for Dads" />
+  <meta property="og:description" content="Curated picks he'll actually use and love." />
+  <meta property="og:type" content="article" />
+  <link rel="canonical" href="https://giftpickr.live/best-gifts-for-dads" />
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Best Gifts for Dads",
+    "description": "A curated list of the best gifts for dads that are practical, thoughtful, and well-loved.",
+    "author": { "@type": "Organization", "name": "EBSS Web Studio" }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Crimson+Pro:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --cream: #f7f3ee;
+      --warm-white: #faf8f5;
+      --ink: #1a1612;
+      --muted: #7a6f64;
+      --accent: #b85c2a;
+      --light-rule: #e8e0d6;
+      --card-bg: #ffffff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--warm-white);
+      color: var(--ink);
+      font-family: 'Crimson Pro', Georgia, serif;
+      font-weight: 300;
+      font-size: 19px;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ─── HEADER ─── */
+    header {
+      background: var(--ink);
+      color: var(--cream);
+      text-align: center;
+      padding: 72px 24px 60px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 60% 0%, rgba(184,92,42,0.18) 0%, transparent 65%);
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      font-family: 'Crimson Pro', serif;
+      font-style: italic;
+      font-size: 14px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 18px;
+      opacity: 0;
+      animation: fadeUp 0.7s 0.1s ease forwards;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(38px, 6vw, 68px);
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+      color: var(--cream);
+      opacity: 0;
+      animation: fadeUp 0.7s 0.25s ease forwards;
+    }
+
+    .tagline {
+      margin-top: 20px;
+      font-size: 17px;
+      color: rgba(247,243,238,0.6);
+      font-style: italic;
+      max-width: 480px;
+      margin-inline: auto;
+      opacity: 0;
+      animation: fadeUp 0.7s 0.4s ease forwards;
+    }
+
+    /* ─── INTRO ─── */
+    .intro {
+      max-width: 660px;
+      margin: 64px auto 0;
+      padding: 0 24px;
+      opacity: 0;
+      animation: fadeUp 0.7s 0.55s ease forwards;
+    }
+
+    .intro p {
+      color: var(--muted);
+      font-size: 18px;
+      text-align: center;
+    }
+
+    /* ─── DIVIDER ─── */
+    .rule {
+      width: 48px;
+      height: 2px;
+      background: var(--accent);
+      margin: 48px auto;
+      border: none;
+    }
+
+    /* ─── GRID ─── */
+    .grid-section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+
+    .section-label {
+      font-family: 'Crimson Pro', serif;
+      font-style: italic;
+      font-size: 13px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 32px;
+      display: block;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      padding: 36px 32px;
+      border: 1px solid var(--light-rule);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      opacity: 0;
+      animation: fadeUp 0.6s ease forwards;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(26,22,18,0.08);
+      z-index: 1;
+    }
+
+    .card-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      color: var(--accent);
+    }
+
+    .card-icon {
+      font-size: 28px;
+      line-height: 1;
+    }
+
+    .card h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.3;
+      color: var(--ink);
+    }
+
+    .card p {
+      font-size: 16px;
+      color: var(--muted);
+      line-height: 1.65;
+      flex: 1;
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      background: var(--cream);
+      color: var(--muted);
+      border-radius: 2px;
+      width: fit-content;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      margin-top: 4px;
+      padding: 10px 20px;
+      background: var(--ink);
+      color: var(--cream);
+      font-family: 'Crimson Pro', serif;
+      font-size: 14px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s ease;
+      width: fit-content;
+    }
+
+    .cta-btn:hover { background: var(--accent); }
+
+    /* Stagger card animations */
+    .card:nth-child(1)  { animation-delay: 0.05s; }
+    .card:nth-child(2)  { animation-delay: 0.12s; }
+    .card:nth-child(3)  { animation-delay: 0.19s; }
+    .card:nth-child(4)  { animation-delay: 0.26s; }
+    .card:nth-child(5)  { animation-delay: 0.33s; }
+    .card:nth-child(6)  { animation-delay: 0.40s; }
+    .card:nth-child(7)  { animation-delay: 0.47s; }
+    .card:nth-child(8)  { animation-delay: 0.54s; }
+
+    /* ─── FAQ ─── */
+    .faq-section {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+
+    .faq-section h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 26px;
+      font-weight: 500;
+      margin-bottom: 32px;
+    }
+
+    details {
+      border-top: 1px solid var(--light-rule);
+      padding: 20px 0;
+    }
+
+    details:last-of-type { border-bottom: 1px solid var(--light-rule); }
+
+    summary {
+      font-family: 'Playfair Display', serif;
+      font-size: 17px;
+      font-weight: 400;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+
+    summary::after {
+      content: '+';
+      font-size: 22px;
+      color: var(--accent);
+      font-weight: 300;
+      flex-shrink: 0;
+    }
+
+    details[open] summary::after { content: '−'; }
+
+    details p {
+      margin-top: 14px;
+      font-size: 16px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      border-top: 1px solid var(--light-rule);
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 13px;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    footer a { color: var(--muted); text-decoration: underline; }
+
+    /* ─── ANIMATION ─── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      header { padding: 52px 20px 44px; }
+      .grid { grid-template-columns: 1fr; }
+      .card { padding: 28px 22px; }
+    }
+  </style>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <p class="eyebrow">Gift Guide</p>
+  <h1>Best Gifts<br>for Dads</h1>
+  <p class="tagline">Curated picks he'll actually use — and quietly brag about.</p>
+</header>
+
+<!-- INTRO -->
+<div class="intro">
+  <p>Skip the novelty mugs. These are gifts that land. Whether he's a homebody, an outdoorsman, a tech tinkerer, or someone who just wants a great cup of coffee — there's something here that fits.</p>
+</div>
+
+<hr class="rule" />
+
+<!-- GIFT GRID -->
+<section class="grid-section">
+  <span class="section-label">Curated Picks — <span class="dyn-year"></span></span>
+  <div class="grid" id="gift-grid"></div>
+</section>
+
+<hr class="rule" />
+
+<!-- FAQ -->
+<section class="faq-section">
+  <h3>Gift-Giving Questions, Answered</h3>
+
+  <details>
+    <summary>What's the best last-minute gift for dad?</summary>
+    <p>A high-quality coffee subscription or a digital gift card to his favorite brand can arrive instantly and still feel intentional. Pair it with a handwritten note for extra weight.</p>
+  </details>
+
+  <details>
+    <summary>What do dads actually want as gifts?</summary>
+    <p>Most dads prefer practical things they'd never buy themselves — quality gear, experiences, comfort upgrades. The key is specificity: a gift that reflects who he actually is always lands better than a generic "dad gift."</p>
+  </details>
+
+  <details>
+    <summary>What's a good gift for a dad who says he doesn't need anything?</summary>
+    <p>Get him something consumable and premium — great coffee, quality snacks, fine whiskey, or a grooming kit. He'll use it, love it, and quietly want more of it.</p>
+  </details>
+
+  <details>
+    <summary>Are expensive gifts always better?</summary>
+    <p>Not at all. A $30 multi-tool he reaches for weekly beats a $200 trinket that collects dust. Focus on usefulness and quality, not price tags.</p>
+  </details>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>This page contains affiliate links. We may earn a small commission at no extra cost to you — it helps us keep curating. &nbsp;|&nbsp; <a href="/privacy">Privacy Policy</a></p>
+</footer>
+
+<script>
+  /* ============================================================
+     PRODUCT CONFIG — paste your Amazon affiliate URLs here.
+     When PAAPI is live, swap url + asin values from API response.
+     tag: your Associates tag (appended automatically if url is
+     a bare ASIN link like https://www.amazon.com/dp/ASIN)
+  ============================================================ */
+  const ASSOCIATE_TAG = 'ericcoste-20';
+
+  const PRODUCTS = [
+    {
+      num: '01',
+      icon: '☕',
+      title: 'Premium Coffee Subscription',
+      desc: 'Fresh single-origin beans delivered monthly. For the dad who takes his morning seriously — this upgrades the ritual, not just the drink.',
+      tag: 'Everyday Luxury',
+      url: '#',           // ← paste Amazon affiliate URL here
+      asin: ''            // ← optional: bare ASIN, used when PAAPI is live
+    },
+    {
+      num: '02',
+      icon: '🎧',
+      title: 'Noise-Cancelling Headphones',
+      desc: 'World-class sound, long battery life, and the blessed ability to mute the world. A gift that gets used every single day.',
+      tag: 'Tech',
+      url: '#',
+      asin: ''
+    },
+    {
+      num: '03',
+      icon: '🔧',
+      title: 'Multi-Tool Pocket Kit',
+      desc: 'Compact and ruthlessly practical. A high-quality multi-tool is the kind of gift dads reach for more than they expect to.',
+      tag: 'Practical',
+      url: '#',
+      asin: ''
+    },
+    {
+      num: '04',
+      icon: '📖',
+      title: 'Curated Book Set',
+      desc: 'Two or three books in a genre he loves — history, thrillers, biographies — wrapped simply and chosen with intention. Thoughtful and timeless.',
+      tag: 'Thoughtful',
+      url: '#',
+      asin: ''
+    },
+    {
+      num: '05',
+      icon: '🌿',
+      title: 'Luxe Grooming Kit',
+      desc: 'Quality razor, balm, and a bar of proper soap. A well-made grooming set is something most dads would never buy for themselves — until they try it.',
+      tag: 'Self-Care',
+      url: '#',
+      asin: ''
+    },
+    {
+      num: '06',
+      icon: '🥩',
+      title: 'BBQ & Grill Essentials',
+      desc: 'Premium tongs, a quality thermometer, smoker chips. For the dad who treats the grill like a sacred space — give him the tools to match the energy.',
+      tag: 'Outdoors',
+      url: '#',
+      asin: ''
+    },
+    {
+      num: '07',
+      icon: '⌚',
+      title: 'Fitness Smartwatch',
+      desc: 'Sleep tracking, heart rate, GPS. Whether he\'s jogging or just moving through his day, a smartwatch makes health feel effortless and motivating.',
+      tag: 'Wellness',
+      url: '#',
+      asin: ''
+    },
+    {
+      num: '08',
+      icon: '🎮',
+      title: 'Retro Gaming Handheld',
+      desc: 'Hundreds of classic games in a pocket-sized device. A hit for the nostalgic dad who lit up at Pac-Man and Mario as a kid — and still would.',
+      tag: 'Fun',
+      url: '#',
+      asin: ''
+    }
+  ];
+
+  /* ── Helpers ── */
+  function buildUrl(p) {
+    if (p.asin) return `https://www.amazon.com/dp/${p.asin}?tag=${ASSOCIATE_TAG}`;
+    return p.url !== '#' ? p.url : '#';
+  }
+
+  function renderCards() {
+    const grid = document.getElementById('gift-grid');
+    grid.innerHTML = PRODUCTS.map((p, i) => `
+      <div class="card" style="animation-delay:${(i * 0.07).toFixed(2)}s">
+        <span class="card-num">${p.num}</span>
+        <div class="card-icon">${p.icon}</div>
+        <h2>${p.title}</h2>
+        <p>${p.desc}</p>
+        <span class="tag">${p.tag}</span>
+        <a href="${buildUrl(p)}" class="cta-btn" ${buildUrl(p) !== '#' ? 'target="_blank" rel="noopener sponsored"' : ''}>Shop Now →</a>
+      </div>
+    `).join('');
+  }
+
+  /* ── Year ── */
+  const y = new Date().getFullYear();
+  document.querySelectorAll('.dyn-year').forEach(el => el.textContent = y);
+  document.title = document.title.replace(/\d{4}/, y);
+  const desc = document.querySelector('meta[name="description"]');
+  if (desc) desc.content = desc.content.replace(/\d{4}/g, y);
+
+  renderCards();
+</script>
+</body>
+</html>

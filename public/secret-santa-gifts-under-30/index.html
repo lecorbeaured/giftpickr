@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Secret Santa Gifts Under $30 — The Sweet Spot Budget</title>
+  <meta name="description" content="The best Secret Santa gifts under $30 — fun, thoughtful, and nothing that looks budget. Picks for the sweet-spot Secret Santa budget." />
+  <meta name="keywords" content="secret santa gifts under 30, secret santa ideas under 30, secret santa under 30 dollars, good secret santa gifts under 30, secret santa gift ideas 30 dollars" />
+  <meta property="og:title" content="Secret Santa Gifts Under $30" />
+  <meta property="og:description" content="The sweet spot budget. Secret Santa gifts under $30 that actually impress." />
+  <meta property="og:type" content="article" />
+  <link rel="canonical" href="https://giftpickr.live/secret-santa-gifts-under-30" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Secret Santa Gifts Under $30","description":"Fun, thoughtful Secret Santa gifts under $30 — the sweet spot budget.","author":{"@type":"Organization","name":"EBSS Web Studio"}}</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --kraft: #c8a87a;
+      --kraft-light: #e0c898;
+      --kraft-pale: #f8f0e0;
+      --kraft-dark: #8a6040;
+      --red: #a82020;
+      --green: #1a5028;
+      --ink: #2a1808;
+      --muted: #8a7060;
+      --border: #d8c090;
+      --card: #fdf8f0;
+      --white: #fffdf8;
+    }
+
+    *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+    html { scroll-behavior:smooth; }
+
+    body {
+      background: var(--kraft-pale);
+      color: var(--ink);
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 1.78;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .topbar {
+      background: var(--red);
+      color: #fff;
+      text-align: center;
+      padding: 9px 24px;
+      font-family: 'Caveat', cursive;
+      font-size: 18px;
+      letter-spacing: 0.04em;
+    }
+
+    header {
+      background: var(--kraft-pale);
+      border-bottom: 2px dashed var(--kraft);
+      padding: 80px 24px 68px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Kraft paper texture */
+    header::before {
+      content:'';
+      position:absolute; inset:0;
+      background: repeating-linear-gradient(
+        0deg, transparent, transparent 28px,
+        rgba(200,168,122,0.15) 28px, rgba(200,168,122,0.15) 29px
+      );
+      pointer-events:none;
+    }
+
+    .header-inner { max-width:820px; margin:0 auto; position:relative; z-index:1; }
+
+    .handwritten-label {
+      font-family: 'Caveat', cursive;
+      font-size: 20px;
+      color: var(--red);
+      margin-bottom: 12px;
+      opacity:0; animation:paperIn 0.7s 0.1s ease forwards;
+    }
+
+    h1 {
+      font-family: 'Caveat', cursive;
+      font-size: clamp(56px, 8.5vw, 96px);
+      font-weight: 700;
+      line-height: 1.0;
+      color: var(--ink);
+      opacity:0; animation:paperIn 0.7s 0.2s ease forwards;
+    }
+
+    h1 .price { color: var(--red); }
+
+    .tagline {
+      margin-top:18px; font-size:17px; font-weight:300;
+      color:var(--muted); max-width:460px; margin-inline:auto;
+      opacity:0; animation:paperIn 0.7s 0.34s ease forwards;
+    }
+
+    .sweet-spot {
+      display:inline-flex; align-items:center; gap:8px;
+      margin-top:20px;
+      font-family:'Caveat',cursive; font-size:18px;
+      color:var(--green);
+      opacity:0; animation:paperIn 0.7s 0.46s ease forwards;
+    }
+    .sweet-spot::before { content:'★'; }
+
+    .grid-section { max-width:1080px; margin:52px auto 0; padding:0 24px 80px; }
+
+    .grid-label {
+      font-family:'Caveat',cursive; font-size:22px;
+      color:var(--kraft-dark); margin-bottom:20px;
+      display:flex; align-items:center; gap:12px;
+    }
+    .grid-label::after { content:''; flex:1; height:1px; background:var(--border); }
+
+    .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(300px,1fr)); gap:12px; }
+
+    .card {
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:2px;
+      padding:28px 24px;
+      display:flex; flex-direction:column; gap:10px;
+      position:relative;
+      transition:transform 0.24s ease, box-shadow 0.24s ease;
+      opacity:0; animation:paperIn 0.5s ease forwards;
+    }
+
+    /* Tape corner effect */
+    .card::before {
+      content:'';
+      position:absolute;
+      top:-6px; left:50%; transform:translateX(-50%);
+      width:40px; height:12px;
+      background:rgba(200,168,122,0.5);
+      border-radius:1px;
+    }
+
+    .card:hover { transform:translateY(-3px) rotate(0.3deg); box-shadow:3px 6px 20px rgba(138,96,64,0.15); }
+
+    .card:nth-child(1){animation-delay:.05s} .card:nth-child(2){animation-delay:.1s}
+    .card:nth-child(3){animation-delay:.15s} .card:nth-child(4){animation-delay:.2s}
+    .card:nth-child(5){animation-delay:.25s} .card:nth-child(6){animation-delay:.3s}
+    .card:nth-child(7){animation-delay:.35s} .card:nth-child(8){animation-delay:.4s}
+
+    .card-top { display:flex; justify-content:space-between; align-items:flex-start; margin-top:8px; }
+    .card-icon { font-size:26px; }
+
+    .price-circle {
+      width:48px; height:48px; border-radius:50%;
+      background:var(--red); color:#fff;
+      display:flex; align-items:center; justify-content:center;
+      font-family:'Caveat',cursive; font-size:13px; font-weight:700;
+      flex-shrink:0; line-height:1;
+      text-align:center;
+    }
+
+    .card h2 { font-family:'Caveat',cursive; font-size:22px; font-weight:700; line-height:1.2; color:var(--ink); }
+    .card p { font-size:14.5px; color:var(--muted); line-height:1.68; flex:1; }
+
+    .crowd-note {
+      font-family:'Caveat',cursive; font-size:16px;
+      color:var(--green);
+    }
+
+    .tag {
+      font-size:10px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase;
+      padding:2px 8px; background:var(--kraft-pale); color:var(--kraft-dark);
+      border:1px solid var(--border); width:fit-content;
+    }
+
+    .cta-btn {
+      display:inline-block; margin-top:4px; padding:10px 18px;
+      background:var(--green); color:#fff;
+      font-family:'Lato',sans-serif; font-size:13px; font-weight:700;
+      letter-spacing:0.06em;
+      text-decoration:none; border-radius:2px;
+      transition:background 0.18s; width:fit-content;
+    }
+    .cta-btn:hover { background:#228844; }
+
+    .faq-section { max-width:700px; margin:0 auto; padding:0 24px 80px; }
+    .faq-heading { font-family:'Caveat',cursive; font-size:36px; color:var(--ink); margin-bottom:8px; }
+    .faq-sub { font-size:14px; color:var(--muted); margin-bottom:32px; }
+
+    details { border-top:1px dashed var(--border); padding:18px 0; }
+    details:last-of-type { border-bottom:1px dashed var(--border); }
+    summary { font-size:16px; font-weight:400; cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center; gap:16px; color:var(--ink); }
+    summary::-webkit-details-marker { display:none; }
+    summary::after { content:'+'; font-size:20px; color:var(--red); font-family:'Caveat',cursive; flex-shrink:0; }
+    details[open] summary::after { content:'−'; }
+    details p { margin-top:12px; font-size:15px; color:var(--muted); line-height:1.75; }
+
+    footer { background:var(--kraft-pale); border-top:2px dashed var(--kraft); text-align:center; padding:28px 24px; font-size:13px; color:var(--muted); }
+    footer a { color:var(--muted); text-decoration:underline; }
+
+    @keyframes paperIn { from{opacity:0;transform:translateY(12px)} to{opacity:1;transform:translateY(0)} }
+    @media (max-width:600px) { h1{font-size:52px} .grid{grid-template-columns:1fr} }
+  </style>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+</head>
+<body>
+
+<div class="topbar">🎄 Secret Santa under $30 · <span class="dyn-year"></span> · the sweet spot</div>
+
+<header>
+  <div class="header-inner">
+    <div class="handwritten-label">Secret Santa Gift Guide</div>
+    <h1>Under <span class="price">$30</span><br>The Sweet Spot.</h1>
+    <p class="tagline">Not too cheap, not too extravagant. Eight picks at the perfect Secret Santa budget that feel genuinely great.</p>
+    <div class="sweet-spot">The most popular Secret Santa budget</div>
+  </div>
+</header>
+
+<section class="grid-section">
+  <div class="grid-label">🎁 Great picks under $30</div>
+  <div class="grid" id="gift-grid"></div>
+</section>
+
+<section class="faq-section">
+  <h2 class="faq-heading">Under $30 FAQ</h2>
+  <p class="faq-sub">Getting the most out of the sweet spot budget.</p>
+
+  <details>
+    <summary>Is $30 a good Secret Santa budget?</summary>
+    <p>$25–$30 is actually the sweet spot for Secret Santa — enough to get something genuinely nice without overspending or making others feel awkward. Most groups land in this range for good reason.</p>
+  </details>
+  <details>
+    <summary>What are the best Secret Santa gifts around $30?</summary>
+    <p>At the $30 mark you can get things that really feel premium — artisan food sets, fun games, quality candles, or a nice drinkware set. You have just enough budget to add real quality and personality.</p>
+  </details>
+  <details>
+    <summary>What Secret Santa gifts work for people you don't know well?</summary>
+    <p>Stick to consumables and universally loved categories — food, games, candles, or plants. Avoid anything too personal, too niche, or requiring taste knowledge you don't have. Food and games are the safest bets at this price point.</p>
+  </details>
+</section>
+
+<footer>
+  <p>This page contains affiliate links. We may earn a small commission at no extra cost to you. &nbsp;|&nbsp; <a href="/privacy">Privacy Policy</a></p>
+</footer>
+
+<script>
+  const ASSOCIATE_TAG = 'ericcoste-20';
+
+  const PRODUCTS = [
+    { num:'01', icon:'🎲', title:'Party Card Game', desc:'The crowd-pleasing card game that works for every group. Under $25 and the most stolen gift at any exchange — which is really the whole point.', price:'Under $25', crowd:'Most likely to get stolen', tag:'Games', url:'#', asin:'' },
+    { num:'02', icon:'🧀', title:'Charcuterie & Snack Gift Box', desc:'Artisan crackers, cured meats, olives, and jam in a beautiful box. Under $30 — the kind of gift that disappears before the exchange is over.', price:'Under $30', crowd:'Best food gift at this price', tag:'Food & Drink', url:'#', asin:'' },
+    { num:'03', icon:'🕯️', title:'Soy Candle Gift Set', desc:'Two or three hand-poured soy candles in elevated scents. Under $28 — looks luxurious, smells incredible, works for literally everyone.', price:'Under $28', crowd:'Universal crowd pleaser', tag:'Ambiance', url:'#', asin:'' },
+    { num:'04', icon:'🫖', title:'Premium Tea & Mug Set', desc:'A beautiful mug with a curated selection of loose-leaf teas. Under $28 — for the tea lover and the person who just likes a good mug with something nice in it.', price:'Under $28', crowd:'Great for office exchanges', tag:'Everyday Ritual', url:'#', asin:'' },
+    { num:'05', icon:'🍳', title:'Mini Cast Iron Skillet', desc:'A tiny cast iron skillet perfect for individual servings or as a stylish serving piece. Under $25 — the practical gift with real personality.', price:'Under $25', crowd:'Memorable and useful', tag:'Kitchen', url:'#', asin:'' },
+    { num:'06', icon:'🌶️', title:'Gourmet Hot Sauce Collection', desc:'Five small-batch hot sauces from around the world in a gift box. Under $28 — for the food adventurer on your list, or anyone who likes flavor.', price:'Under $28', crowd:'Foodies love this', tag:'Food & Drink', url:'#', asin:'' },
+    { num:'07', icon:'🎮', title:'Travel-Size Board Game', desc:'A compact, travel-sized version of a beloved classic game. Under $25 — fits in a bag, plays in minutes, and always gets brought out again.', price:'Under $25', crowd:'Gets played at the party', tag:'Games', url:'#', asin:'' },
+    { num:'08', icon:'🫙', title:'Artisan Jam & Honey Set', desc:'Small-batch jams and local honey in a beautiful gift set. Under $30 — the kind of thing people photograph before they open it and finish within a week.', price:'Under $30', crowd:'Foodie favorite', tag:'Food & Drink', url:'#', asin:'' }
+  ];
+
+  function buildUrl(p) { return p.asin ? `https://www.amazon.com/dp/${p.asin}?tag=${ASSOCIATE_TAG}` : p.url !== '#' ? p.url : '#'; }
+  function linkAttrs(p) { return buildUrl(p) !== '#' ? 'target="_blank" rel="noopener sponsored"' : ''; }
+
+  function renderGrid(list) {
+    document.getElementById('gift-grid').innerHTML = list.map((p,i) => `
+      <div class="card" style="animation-delay:${(i*0.05).toFixed(2)}s">
+        <div class="card-top">
+          <div class="card-icon">${p.icon}</div>
+          <div class="price-circle">${p.price}</div>
+        </div>
+        <h2>${p.title}</h2><p>${p.desc}</p>
+        <div class="crowd-note">★ ${p.crowd}</div>
+        <span class="tag">${p.tag}</span>
+        <a href="${buildUrl(p)}" class="cta-btn" ${linkAttrs(p)}>Shop Now →</a>
+      </div>`).join('');
+  }
+
+  const y = new Date().getFullYear();
+  document.querySelectorAll('.dyn-year').forEach(el => el.textContent = y);
+  document.title = `Secret Santa Gifts Under $30 (${y}) — The Sweet Spot Budget`;
+  const dm = document.querySelector('meta[name="description"]'); if (dm) dm.content = dm.content.replace(/\d{4}/g, y);
+  renderGrid(PRODUCTS);
+</script>
+</body>
+</html>

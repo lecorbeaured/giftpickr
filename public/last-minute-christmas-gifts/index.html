@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Last Minute Christmas Gifts — Fast Picks for Every Person on Your List</title>
+  <meta name="description" content="Last minute Christmas gifts that arrive fast and feel thoughtful. Digital options instantly. Prime same-day and next-day for everyone still on your list." />
+  <meta name="keywords" content="last minute christmas gifts, last minute christmas gift ideas, same day christmas gifts, christmas gifts that ship fast, emergency christmas gifts" />
+  <meta property="og:title" content="Last Minute Christmas Gifts" />
+  <meta property="og:description" content="Fast picks for every person still on your list. Sorted by delivery speed." />
+  <meta property="og:type" content="article" />
+  <link rel="canonical" href="https://giftpickr.live/last-minute-christmas-gifts" />
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"Last Minute Christmas Gifts","description":"Fast-arriving and digital last minute Christmas gifts sorted by delivery speed.","author":{"@type":"Organization","name":"EBSS Web Studio"},"mainEntity":{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What are good last minute Christmas gifts?","acceptedAnswer":{"@type":"Answer","text":"Digital gifts like Amazon gift cards, streaming subscriptions, and gaming credits arrive instantly. Prime same-day delivers candles, food boxes, and grooming kits in most cities."}},{"@type":"Question","name":"What Christmas gifts can I get delivered on Christmas Eve?","acceptedAnswer":{"@type":"Answer","text":"Amazon Prime same-day delivery is available in most major US cities on Christmas Eve until midday. Digital gift cards and subscriptions arrive instantly at any time."}},{"@type":"Question","name":"What last minute Christmas gifts can be emailed instantly?","acceptedAnswer":{"@type":"Answer","text":"Amazon gift cards, Netflix and Spotify subscriptions, gaming credits, Audible memberships, food delivery gift cards, and restaurant gift cards all arrive via email within seconds."}}]}}</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --midnight: #080c18;
+      --navy: #0d1428;
+      --navy-mid: #121c38;
+      --card: #111828;
+      --border: #1e2c50;
+      --border-light: #2a3d6a;
+      --gold: #f0c040;
+      --gold-dim: rgba(240,192,64,0.15);
+      --gold-border: rgba(240,192,64,0.3);
+      --silver: #c0d0e8;
+      --muted: #6070a0;
+      --instant: #22c55e;
+      --sameday: #f59e0b;
+      --nextday: #818cf8;
+      --red-xmas: #dc2626;
+    }
+
+    *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+    html { scroll-behavior:smooth; }
+
+    body {
+      background: var(--midnight);
+      color: var(--silver);
+      font-family: 'Exo 2', sans-serif;
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Star field */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        radial-gradient(1px 1px at 10% 20%, rgba(240,192,64,0.4) 0%, transparent 100%),
+        radial-gradient(1px 1px at 30% 60%, rgba(192,208,232,0.3) 0%, transparent 100%),
+        radial-gradient(1px 1px at 60% 15%, rgba(240,192,64,0.3) 0%, transparent 100%),
+        radial-gradient(1px 1px at 80% 75%, rgba(192,208,232,0.2) 0%, transparent 100%),
+        radial-gradient(1px 1px at 45% 90%, rgba(240,192,64,0.2) 0%, transparent 100%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ─── COUNTDOWN BAR ─── */
+    .countdown-bar {
+      background: var(--red-xmas);
+      color: #fff;
+      text-align: center;
+      padding: 10px 24px;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      position: relative;
+      z-index: 10;
+    }
+
+    .countdown-bar .pulse {
+      display: inline-block;
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.5} }
+
+    /* ─── HEADER ─── */
+    header {
+      background: var(--navy);
+      border-bottom: 1px solid var(--gold-border);
+      padding: 80px 24px 72px;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    /* Aurora glow */
+    header::before {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse at 20% 0%, rgba(240,192,64,0.08) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 100%, rgba(130,140,248,0.06) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .header-inner { max-width:900px; margin:0 auto; position:relative; z-index:1; }
+
+    .eyebrow {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 10px;
+      font-weight: 400;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      opacity:0; animation:starIn 0.6s 0.1s ease forwards;
+    }
+    .eyebrow::before { content:''; width:24px; height:1px; background:var(--gold); }
+
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: clamp(36px, 5.5vw, 72px);
+      font-weight: 900;
+      line-height: 1.05;
+      letter-spacing: 0.02em;
+      color: var(--silver);
+      opacity:0; animation:starIn 0.6s 0.2s ease forwards;
+    }
+
+    h1 .gold { color: var(--gold); }
+
+    .header-desc {
+      margin-top: 22px;
+      max-width: 520px;
+      font-size: 16px;
+      color: var(--muted);
+      line-height: 1.65;
+      opacity:0; animation:starIn 0.6s 0.34s ease forwards;
+    }
+
+    .legend {
+      margin-top: 28px;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      opacity:0; animation:starIn 0.6s 0.46s ease forwards;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 12px;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      padding: 5px 12px;
+      font-family: 'Exo 2', sans-serif;
+    }
+
+    .dot { width:7px; height:7px; border-radius:50%; flex-shrink:0; }
+
+    /* ─── GRID ─── */
+    .grid-section { max-width:1080px; margin:56px auto 0; padding:0 24px 80px; position:relative; z-index:1; }
+
+    .grid-label {
+      font-family:'Orbitron',sans-serif;
+      font-size:10px; letter-spacing:0.22em; text-transform:uppercase;
+      color:var(--muted); margin-bottom:20px;
+      display:flex; align-items:center; gap:12px;
+    }
+    .grid-label::after { content:''; flex:1; height:1px; background:var(--border); }
+
+    .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(300px,1fr)); gap:1px; background:var(--border); border:1px solid var(--border); }
+
+    .card {
+      background:var(--card);
+      padding:28px 24px;
+      display:flex; flex-direction:column; gap:10px;
+      position:relative;
+      transition:background 0.2s;
+      opacity:0; animation:starIn 0.5s ease forwards;
+    }
+
+    .card:hover { background:#161e34; }
+
+    .card::before {
+      content:'';
+      position:absolute;
+      top:0;left:0;right:0;
+      height:1px;
+      background:linear-gradient(90deg,transparent,var(--gold),transparent);
+      transform:scaleX(0); transform-origin:left;
+      transition:transform 0.4s ease;
+    }
+    .card:hover::before { transform:scaleX(1); }
+
+    .card:nth-child(1){animation-delay:.05s} .card:nth-child(2){animation-delay:.09s}
+    .card:nth-child(3){animation-delay:.13s} .card:nth-child(4){animation-delay:.17s}
+    .card:nth-child(5){animation-delay:.21s} .card:nth-child(6){animation-delay:.25s}
+    .card:nth-child(7){animation-delay:.29s} .card:nth-child(8){animation-delay:.33s}
+
+    .card-top { display:flex; justify-content:space-between; align-items:flex-start; gap:8px; flex-wrap:wrap; }
+    .card-icon { font-size:26px; }
+
+    .badge-row { display:flex; gap:6px; flex-wrap:wrap; }
+
+    .speed-badge {
+      font-family:'Orbitron',sans-serif;
+      font-size:9px; letter-spacing:0.1em; text-transform:uppercase;
+      padding:3px 8px; border:1px solid;
+    }
+
+    .speed-instant { color:var(--instant); border-color:rgba(34,197,94,0.3); background:rgba(34,197,94,0.06); }
+    .speed-sameday { color:var(--sameday); border-color:rgba(245,158,11,0.3); background:rgba(245,158,11,0.06); }
+    .speed-nextday { color:var(--nextday); border-color:rgba(129,140,248,0.3); background:rgba(129,140,248,0.06); }
+
+    .for-badge {
+      font-family:'Orbitron',sans-serif;
+      font-size:9px; letter-spacing:0.08em;
+      padding:3px 8px; border:1px solid var(--border);
+      color:var(--muted);
+    }
+
+    .card h2 {
+      font-family:'Orbitron',sans-serif;
+      font-size:14px; font-weight:700;
+      letter-spacing:0.04em; line-height:1.3;
+      color:var(--silver);
+    }
+
+    .card p { font-size:14px; color:var(--muted); line-height:1.65; flex:1; }
+
+    .tag {
+      font-size:10px; letter-spacing:0.12em; text-transform:uppercase;
+      padding:2px 8px; border:1px solid var(--border);
+      color:var(--muted); width:fit-content;
+    }
+
+    .cta-btn {
+      display:inline-block; margin-top:4px; padding:10px 18px;
+      background:var(--gold-dim); border:1px solid var(--gold-border);
+      color:var(--gold);
+      font-family:'Orbitron',sans-serif; font-size:10px; font-weight:700;
+      letter-spacing:0.12em; text-transform:uppercase;
+      text-decoration:none; transition:background 0.2s, border-color 0.2s; width:fit-content;
+    }
+    .cta-btn:hover { background:rgba(240,192,64,0.25); border-color:var(--gold); }
+
+    .faq-section { max-width:720px; margin:0 auto; padding:0 24px 80px; position:relative; z-index:1; }
+    .faq-heading { font-family:'Orbitron',sans-serif; font-size:22px; font-weight:700; color:var(--silver); margin-bottom:8px; letter-spacing:0.04em; }
+    .faq-sub { font-size:13px; color:var(--muted); margin-bottom:36px; letter-spacing:0.08em; }
+
+    details { border-top:1px solid var(--border); padding:20px 0; }
+    details:last-of-type { border-bottom:1px solid var(--border); }
+    summary { font-size:15px; font-weight:400; cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center; gap:16px; color:var(--silver); }
+    summary::-webkit-details-marker { display:none; }
+    summary::after { content:'+'; font-size:18px; color:var(--gold); font-family:'Orbitron',sans-serif; flex-shrink:0; }
+    details[open] summary::after { content:'−'; }
+    details p { margin-top:14px; font-size:14px; color:var(--muted); line-height:1.75; }
+
+    footer { background:var(--navy); border-top:1px solid var(--border); text-align:center; padding:28px 24px; font-size:12px; color:var(--muted); position:relative; z-index:1; }
+    footer a { color:var(--muted); text-decoration:underline; }
+
+    @keyframes starIn { from{opacity:0;transform:translateY(14px)} to{opacity:1;transform:translateY(0)} }
+    @media (max-width:600px) { h1{font-size:32px} .grid{grid-template-columns:1fr;background:none;border:none;gap:2px} .card{border:1px solid var(--border)} }
+  </style>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+</head>
+<body>
+
+<div class="countdown-bar"><span class="pulse">🎄</span> &nbsp; LAST MINUTE CHRISTMAS · <span class="dyn-year"></span> · DIGITAL GIFTS ARRIVE IN SECONDS · PRIME SAME-DAY AVAILABLE &nbsp; <span class="pulse">🎄</span></div>
+
+<header>
+  <div class="header-inner">
+    <div class="eyebrow">Last Minute · Christmas <span class="dyn-year"></span></div>
+    <h1>Christmas Gifts.<br><span class="gold">Still Time.</span></h1>
+    <p class="header-desc">Eight picks for every person still on your list — sorted by how fast they arrive. Digital options land in seconds. Prime covers the rest before the big day.</p>
+    <div class="legend">
+      <div class="legend-item"><div class="dot" style="background:var(--instant)"></div> Instant</div>
+      <div class="legend-item"><div class="dot" style="background:var(--sameday)"></div> Same-Day Prime</div>
+      <div class="legend-item"><div class="dot" style="background:var(--nextday)"></div> Next-Day Prime</div>
+    </div>
+  </div>
+</header>
+
+<section class="grid-section">
+  <div class="grid-label">// fast picks · sorted by speed</div>
+  <div class="grid" id="gift-grid"></div>
+</section>
+
+<section class="faq-section">
+  <h2 class="faq-heading">Last Minute FAQ</h2>
+  <p class="faq-sub">// quick answers · no time to waste</p>
+
+  <details>
+    <summary>What are good last minute Christmas gifts?</summary>
+    <p>Digital gifts like Amazon gift cards, streaming subscriptions, and gaming credits arrive instantly. Prime same-day delivers candles, food boxes, and grooming kits in most cities. Check the delivery estimate at checkout before confirming.</p>
+  </details>
+  <details>
+    <summary>What Christmas gifts can I get delivered on Christmas Eve?</summary>
+    <p>Amazon Prime same-day delivery is available in most major US cities on Christmas Eve until midday. Digital gift cards and subscriptions arrive instantly at any hour — no cutoff applies.</p>
+  </details>
+  <details>
+    <summary>What last minute Christmas gifts can be emailed instantly?</summary>
+    <p>Amazon gift cards, Netflix and Spotify subscriptions, gaming credits (Steam, Xbox, PlayStation), Audible memberships, food delivery gift cards, and restaurant gift cards all arrive via email within seconds of purchase.</p>
+  </details>
+</section>
+
+<footer>
+  <p>This page contains affiliate links. We may earn a small commission at no extra cost to you. &nbsp;|&nbsp; <a href="/privacy">Privacy Policy</a></p>
+</footer>
+
+<script>
+  const ASSOCIATE_TAG = 'ericcoste-20';
+
+  const PRODUCTS = [
+    { num:'01', icon:'🎁', title:'Amazon Gift Card (Email)', desc:'Arrives the moment you send it. Every person on your list picks exactly what they actually want. The ultimate last-minute move that genuinely lands.', speed:'instant', speedLabel:'Instant', forWhom:'For Anyone', tag:'Digital', url:'#', asin:'' },
+    { num:'02', icon:'🎵', title:'Spotify Premium Subscription', desc:'A year of ad-free music and podcasts, delivered digitally in seconds. For the person who listens to everything — it becomes part of every single day.', speed:'instant', speedLabel:'Instant', forWhom:'For Anyone', tag:'Digital', url:'#', asin:'' },
+    { num:'03', icon:'🎮', title:'Gaming Gift Card', desc:'Steam, Xbox, or PlayStation credits. Deployed instantly. For the gamer on your list — honestly the gift they\'d choose for themselves.', speed:'instant', speedLabel:'Instant', forWhom:'For Him / Teen', tag:'Digital', url:'#', asin:'' },
+    { num:'04', icon:'🕯️', title:'Luxury Candle Set', desc:'Hand-poured soy candles in elevated scents. Same-day Prime in most cities — arrives beautiful and already gift-ready for the women on your list.', speed:'sameday', speedLabel:'Same-Day', forWhom:'For Her / Mom', tag:'Ambiance', url:'#', asin:'' },
+    { num:'05', icon:'☕', title:'Specialty Coffee Gift Box', desc:'Four single-origin roasts from top micro-roasters. Same-day Prime. For the coffee person who will immediately notice — and appreciate — the upgrade.', speed:'sameday', speedLabel:'Same-Day', forWhom:'For Dad / Him', tag:'Food & Drink', url:'#', asin:'' },
+    { num:'06', icon:'🍫', title:'Artisan Chocolate Box', desc:'Premium chocolates in a beautifully decorated holiday tin. Next-day Prime. For everyone — a gift that arrives perfect, no wrapping needed.', speed:'nextday', speedLabel:'Next-Day', forWhom:'For Anyone', tag:'Indulgence', url:'#', asin:'' },
+    { num:'07', icon:'🥃', title:'Whiskey Stones & Rocks Glass', desc:'Granite cooling stones + a proper glass. Next-day Prime. For the whiskey drinker — a quietly elegant gift that feels far more expensive than it is.', speed:'nextday', speedLabel:'Next-Day', forWhom:'For Him / Dad', tag:'Food & Drink', url:'#', asin:'' },
+    { num:'08', icon:'🍕', title:'Food Delivery Gift Card (Email)', desc:'DoorDash, Uber Eats, or their favorite restaurant. Delivered instantly. For anyone — dinner is handled, and you look like you had a plan all along.', speed:'instant', speedLabel:'Instant', forWhom:'For Anyone', tag:'Digital', url:'#', asin:'' }
+  ];
+
+  const speedClass = { instant:'speed-instant', sameday:'speed-sameday', nextday:'speed-nextday' };
+
+  function buildUrl(p) { return p.asin ? `https://www.amazon.com/dp/${p.asin}?tag=${ASSOCIATE_TAG}` : p.url !== '#' ? p.url : '#'; }
+  function linkAttrs(p) { return buildUrl(p) !== '#' ? 'target="_blank" rel="noopener sponsored"' : ''; }
+
+  function renderGrid(list) {
+    document.getElementById('gift-grid').innerHTML = list.map((p,i) => `
+      <div class="card" style="animation-delay:${(i*0.04).toFixed(2)}s">
+        <div class="card-top">
+          <div class="card-icon">${p.icon}</div>
+          <div class="badge-row">
+            <span class="speed-badge speed-${p.speed}">⚡ ${p.speedLabel}</span>
+            <span class="for-badge">${p.forWhom}</span>
+          </div>
+        </div>
+        <h2>${p.title}</h2>
+        <p>${p.desc}</p>
+        <span class="tag">${p.tag}</span>
+        <a href="${buildUrl(p)}" class="cta-btn" ${linkAttrs(p)}>Get It Now →</a>
+      </div>`).join('');
+  }
+
+  const y = new Date().getFullYear();
+  document.querySelectorAll('.dyn-year').forEach(el => el.textContent = y);
+  document.title = `Last Minute Christmas Gifts (${y}) — Fast Picks for Every Person on Your List`;
+  const dm = document.querySelector('meta[name="description"]'); if (dm) dm.content = dm.content.replace(/\d{4}/g, y);
+  const ld = document.querySelector('script[type="application/ld+json"]'); if (ld) ld.textContent = ld.textContent.replace(/2025/g, y);
+  renderGrid(PRODUCTS);
+</script>
+</body>
+</html>

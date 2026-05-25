@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Last Minute Gifts for Mom — Thoughtful Picks That Arrive Fast</title>
+  <meta name="description" content="Last minute gifts for mom that feel genuinely thoughtful. Digital options arrive in seconds. Prime delivers same-day or next-day. She'll never know you panicked." />
+  <meta name="keywords" content="last minute gifts for mom, last minute mom gifts, emergency gift for mom, same day gifts for mom, last minute mother gifts" />
+  <meta property="og:title" content="Last Minute Gifts for Mom" />
+  <meta property="og:description" content="Thoughtful picks that arrive fast. Digital, same-day, and next-day options for mom." />
+  <meta property="og:type" content="article" />
+  <link rel="canonical" href="https://giftpickr.live/last-minute-gifts-for-mom" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Last Minute Gifts for Mom",
+    "description": "Fast-arriving and digital last minute gifts for mom that feel thoughtful and personal.",
+    "author": { "@type": "Organization", "name": "EBSS Web Studio" },
+    "mainEntity": {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What are good last minute gifts for mom?", "acceptedAnswer": { "@type": "Answer", "text": "Spa gift cards, flower delivery subscriptions, premium candles, and digital gift cards all arrive quickly. Amazon Prime same-day delivers luxury candles, skincare sets, and bath gifts in most cities." } },
+        { "@type": "Question", "name": "What last minute gifts for mom can be emailed?", "acceptedAnswer": { "@type": "Answer", "text": "Amazon gift cards, spa booking credits, food delivery cards, streaming subscriptions, and Audible memberships all deliver instantly via email." } },
+        { "@type": "Question", "name": "How do I make a last minute gift feel thoughtful?", "acceptedAnswer": { "@type": "Answer", "text": "Add a personal handwritten note and choose something specific to her — her favorite scent, a book in a genre she loves, or a spa experience she'd never book for herself. Specificity transforms any gift." } }
+      ]
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Lato:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --amber: #b45309;
+      --amber-light: #d97706;
+      --amber-pale: #fffbeb;
+      --amber-dim: #fef3c7;
+      --gold: #f59e0b;
+      --warm-white: #fdfaf4;
+      --ink: #1c1209;
+      --muted: #92714a;
+      --border: #e8d9b8;
+      --card-bg: #fffdf7;
+      --instant: #16a34a;
+      --sameday: #b45309;
+      --nextday: #1d4ed8;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--warm-white);
+      color: var(--ink);
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 1.78;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ─── TOP STRIP ─── */
+    .topstrip {
+      background: var(--amber);
+      color: #fffbeb;
+      text-align: center;
+      padding: 9px 24px;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.16em;
+    }
+
+    /* ─── HEADER ─── */
+    header {
+      background: linear-gradient(160deg, #fef9ec 0%, #fde68a 50%, #fbbf24 100%);
+      padding: 80px 24px 72px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Golden hour sun bleed */
+    header::before {
+      content: '';
+      position: absolute;
+      width: 700px; height: 700px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(251,191,36,0.5) 0%, transparent 65%);
+      top: -300px; right: -200px;
+      pointer-events: none;
+    }
+
+    .header-inner { max-width: 860px; margin: 0 auto; position: relative; z-index: 1; }
+
+    .eyebrow {
+      display: inline-block;
+      background: var(--amber);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      margin-bottom: 20px;
+      opacity: 0;
+      animation: warmIn 0.6s 0.1s ease forwards;
+    }
+
+    h1 {
+      font-family: 'Yeseva One', serif;
+      font-size: clamp(44px, 7vw, 80px);
+      line-height: 1.05;
+      color: var(--ink);
+      opacity: 0;
+      animation: warmIn 0.6s 0.22s ease forwards;
+    }
+
+    h1 em {
+      font-style: italic;
+      color: var(--amber);
+      display: block;
+    }
+
+    .header-desc {
+      margin-top: 22px;
+      max-width: 480px;
+      font-size: 16px;
+      color: rgba(28,18,9,0.65);
+      opacity: 0;
+      animation: warmIn 0.6s 0.34s ease forwards;
+    }
+
+    .legend {
+      margin-top: 28px;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: warmIn 0.6s 0.46s ease forwards;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 12px;
+      font-weight: 400;
+      color: var(--muted);
+      background: rgba(255,255,255,0.6);
+      padding: 5px 12px;
+      border-radius: 20px;
+    }
+
+    .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+
+    /* ─── GRID ─── */
+    .grid-section { max-width: 1080px; margin: 56px auto 0; padding: 0 24px 80px; }
+
+    .grid-label {
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .grid-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px; }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      transition: box-shadow 0.25s ease, transform 0.25s ease;
+      opacity: 0;
+      animation: warmIn 0.5s ease forwards;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 28px rgba(180,83,9,0.1);
+    }
+
+    .card:nth-child(1){animation-delay:.05s} .card:nth-child(2){animation-delay:.1s}
+    .card:nth-child(3){animation-delay:.15s} .card:nth-child(4){animation-delay:.2s}
+    .card:nth-child(5){animation-delay:.25s} .card:nth-child(6){animation-delay:.3s}
+    .card:nth-child(7){animation-delay:.35s} .card:nth-child(8){animation-delay:.4s}
+
+    .card-top { display: flex; justify-content: space-between; align-items: flex-start; }
+    .card-icon { font-size: 26px; line-height: 1; }
+
+    .speed-badge {
+      font-size: 10px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+
+    .speed-instant { background: rgba(22,163,74,0.1); color: var(--instant); border: 1px solid rgba(22,163,74,0.25); }
+    .speed-sameday { background: rgba(180,83,9,0.1); color: var(--sameday); border: 1px solid rgba(180,83,9,0.25); }
+    .speed-nextday { background: rgba(29,78,216,0.1); color: var(--nextday); border: 1px solid rgba(29,78,216,0.25); }
+
+    .card h2 {
+      font-family: 'Yeseva One', serif;
+      font-size: 19px;
+      line-height: 1.25;
+      color: var(--ink);
+    }
+
+    .card p { font-size: 14.5px; color: var(--muted); line-height: 1.68; flex: 1; }
+
+    .tag {
+      font-size: 10px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      padding: 3px 9px;
+      background: var(--amber-dim);
+      color: var(--amber);
+      border-radius: 20px;
+      width: fit-content;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      margin-top: 4px;
+      padding: 10px 22px;
+      background: var(--amber);
+      color: #fff;
+      font-family: 'Lato', sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: background 0.2s;
+      width: fit-content;
+    }
+
+    .cta-btn:hover { background: var(--amber-light); }
+
+    .faq-section { max-width: 700px; margin: 0 auto; padding: 0 24px 80px; }
+
+    .faq-heading {
+      font-family: 'Yeseva One', serif;
+      font-size: 30px;
+      color: var(--ink);
+      margin-bottom: 8px;
+    }
+
+    .faq-sub { font-size: 14px; color: var(--muted); margin-bottom: 36px; }
+
+    details { border-top: 1px solid var(--border); padding: 20px 0; }
+    details:last-of-type { border-bottom: 1px solid var(--border); }
+
+    summary {
+      font-size: 16px; font-weight: 400; cursor: pointer; list-style: none;
+      display: flex; justify-content: space-between; align-items: center; gap: 16px; color: var(--ink);
+    }
+
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: '+'; font-size: 22px; color: var(--amber); flex-shrink: 0; }
+    details[open] summary::after { content: '−'; }
+    details p { margin-top: 14px; font-size: 15px; color: var(--muted); line-height: 1.75; }
+
+    footer {
+      background: var(--amber-dim);
+      border-top: 1px solid var(--border);
+      text-align: center; padding: 32px 24px;
+      font-size: 13px; color: var(--muted);
+    }
+    footer a { color: var(--muted); text-decoration: underline; }
+
+    @keyframes warmIn {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 42px; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+</head>
+<body>
+
+<div class="topstrip">⚡ Digital gifts arrive instantly · Prime same-day in most cities · She'll never know</div>
+
+<header>
+  <div class="header-inner">
+    <div class="eyebrow">⚡ Last Minute Guide</div>
+    <h1>Gifts for Mom<br><em>That Arrive Today.</em></h1>
+    <p class="header-desc">She'll never know you panicked. Digital picks land in her inbox within seconds. Prime delivers the rest before the day is over.</p>
+    <div class="legend">
+      <div class="legend-item"><div class="dot" style="background:var(--instant)"></div> Instant</div>
+      <div class="legend-item"><div class="dot" style="background:var(--sameday)"></div> Same-Day Prime</div>
+      <div class="legend-item"><div class="dot" style="background:var(--nextday)"></div> Next-Day Prime</div>
+    </div>
+  </div>
+</header>
+
+<section class="grid-section">
+  <div class="grid-label">Fast picks · sorted by speed</div>
+  <div class="grid" id="gift-grid"></div>
+</section>
+
+<section class="faq-section">
+  <h2 class="faq-heading">Last Minute Questions</h2>
+  <p class="faq-sub">Fast answers for when time is short.</p>
+
+  <details>
+    <summary>What are good last minute gifts for mom?</summary>
+    <p>Spa gift cards, flower delivery subscriptions, premium candles, and digital gift cards all arrive quickly. Amazon Prime same-day delivers luxury candles, skincare sets, and bath gifts in most cities.</p>
+  </details>
+  <details>
+    <summary>What last minute gifts for mom can be emailed?</summary>
+    <p>Amazon gift cards, spa booking credits, food delivery cards, streaming subscriptions, and Audible memberships all deliver instantly via email — and can be scheduled for a specific delivery time.</p>
+  </details>
+  <details>
+    <summary>How do I make a last minute gift feel thoughtful?</summary>
+    <p>Add a personal handwritten note and choose something specific to her — her favorite scent, a book in a genre she loves, or a spa experience she'd never book for herself. Specificity transforms any gift.</p>
+  </details>
+</section>
+
+<footer>
+  <p>This page contains affiliate links. We may earn a small commission at no extra cost to you. &nbsp;|&nbsp; <a href="/privacy">Privacy Policy</a></p>
+</footer>
+
+<script>
+  const ASSOCIATE_TAG = 'ericcoste-20';
+
+  const PRODUCTS = [
+    { num:'01', icon:'🎁', title:'Amazon Gift Card (Email)', desc:'Arrives in her inbox the moment you send it. She picks something she actually wants — which is often more meaningful than guessing.', speed:'instant', speedLabel:'Instant', tag:'Digital', url:'#', asin:'' },
+    { num:'02', icon:'💆', title:'Spa Day Gift Card', desc:'A gift card to a local spa or Spafinder. Delivered digitally in seconds — she books her own perfect afternoon.', speed:'instant', speedLabel:'Instant', tag:'Self-Care', url:'#', asin:'' },
+    { num:'03', icon:'🌿', title:'Audible Membership', desc:'Three months of audiobooks. Delivered instantly — perfect for the mom who drives, walks, or just wants stories while she unwinds.', speed:'instant', speedLabel:'Instant', tag:'Digital', url:'#', asin:'' },
+    { num:'04', icon:'🕯️', title:'Luxury Candle Set', desc:'Hand-poured soy candles in elevated scents. Same-day Prime in most cities — arrives gift-ready without any extra wrapping effort.', speed:'sameday', speedLabel:'Same-Day', tag:'Ambiance', url:'#', asin:'' },
+    { num:'05', icon:'🛁', title:'Spa Bath Gift Set', desc:'Bath bombs, body butter, loofah — all in a beautiful box. Same-day Prime delivery — a complete self-care kit, no assembly required.', speed:'sameday', speedLabel:'Same-Day', tag:'Self-Care', url:'#', asin:'' },
+    { num:'06', icon:'🌸', title:'Botanical Skincare Set', desc:'Face oil, mist, and moisturizer from a clean beauty brand. Next-day Prime — feels luxurious without looking last-minute.', speed:'nextday', speedLabel:'Next-Day', tag:'Beauty', url:'#', asin:'' },
+    { num:'07', icon:'📚', title:'Bestselling Novel', desc:'One beautifully chosen book in a genre she loves. Next-day Prime — the most personal gift on this list, and often the most remembered.', speed:'nextday', speedLabel:'Next-Day', tag:'Thoughtful', url:'#', asin:'' },
+    { num:'08', icon:'🍽️', title:'Restaurant Gift Card (Email)', desc:'A gift card to her favorite restaurant or OpenTable credit. Delivered instantly — dinner is planned, and you look like you thought this through.', speed:'instant', speedLabel:'Instant', tag:'Digital', url:'#', asin:'' }
+  ];
+
+  const speedClass = { instant:'speed-instant', sameday:'speed-sameday', nextday:'speed-nextday' };
+
+  function buildUrl(p) {
+    if (p.asin) return `https://www.amazon.com/dp/${p.asin}?tag=${ASSOCIATE_TAG}`;
+    return p.url !== '#' ? p.url : '#';
+  }
+
+  function linkAttrs(p) { return buildUrl(p) !== '#' ? 'target="_blank" rel="noopener sponsored"' : ''; }
+
+  function renderGrid(list) {
+    document.getElementById('gift-grid').innerHTML = list.map((p, i) => `
+      <div class="card" style="animation-delay:${(i*0.05).toFixed(2)}s">
+        <div class="card-top">
+          <div class="card-icon">${p.icon}</div>
+          <span class="speed-badge speed-${p.speed}">⚡ ${p.speedLabel}</span>
+        </div>
+        <h2>${p.title}</h2>
+        <p>${p.desc}</p>
+        <span class="tag">${p.tag}</span>
+        <a href="${buildUrl(p)}" class="cta-btn" ${linkAttrs(p)}>Get It Now →</a>
+      </div>`).join('');
+  }
+
+  const y = new Date().getFullYear();
+  document.querySelectorAll('.dyn-year').forEach(el => el.textContent = y);
+  document.title = `Last Minute Gifts for Mom (${y}) — Thoughtful Picks That Arrive Fast`;
+  const dm = document.querySelector('meta[name="description"]'); if (dm) dm.content = dm.content.replace(/\d{4}/g, y);
+  const ld = document.querySelector('script[type="application/ld+json"]'); if (ld) ld.textContent = ld.textContent.replace(/2025/g, y);
+  renderGrid(PRODUCTS);
+</script>
+</body>
+</html>
